@@ -48,3 +48,34 @@
     Output:
     - Code
     - Short explanation of key decisions
+
+### strong session opener
+    Read and follow CLAUDE.md for project conventions.
+
+    Before making changes:
+    - summarize the relevant rules from CLAUDE.md in 5 bullets max
+    - identify any ambiguity or conflict
+    - propose a short plan
+
+    While implementing:
+    - follow existing patterns in the repo
+    - do not add dependencies unless explicitly approved
+    - keep changes minimal and production-ready
+
+    Before finishing:
+    - verify the code matches CLAUDE.md rules
+    - run or describe lint/tests impacted
+    - list files changed and why
+
+ ### Instead of relying on passive memory, start sessions with a short instruction block like:
+    Follow project rules in CLAUDE.md.
+    Non-negotiables for this task:
+    - no new dependencies
+    - TypeScript strict mode
+    - functional components only
+    - update tests if behavior changes
+
+    Before coding:
+    1. summarize relevant rules you found
+    2. state plan in 3 bullets
+    3. then implement   
