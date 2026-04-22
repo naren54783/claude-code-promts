@@ -3,35 +3,89 @@
 
 ## 1. Project Setup Prompt
 
+    Act as a senior frontend engineer.
+
+    Task:
     Initialize a React project using Vite with TypeScript and Tailwind CSS.
 
     Requirements:
-    - Folder structure: components, pages, hooks, utils, styles
-    - Configure Tailwind properly
-    - Add ESLint + Prettier
+    - Use React with Vite
+    - Use TypeScript
+    - Configure Tailwind CSS properly
+    - Use a clean folder structure with:
+    - components
+    - pages
+    - hooks
+    - utils
+    - styles
+    - Add ESLint and Prettier
     - Use functional components only
     - Setup absolute imports
+    - Keep the setup simple, scalable, and production-friendly
 
-    Output:
-    - Project structure
-    - Key config files
+    Step 1: Propose 2–3 approaches
+    For each approach, include:
+    - How the project structure would be organized
+    - Pros and cons
+    - When that approach is best
 
+    Step 2: Recommendation
+    - Recommend the best approach for this project
+    - Keep the reasoning practical and concise
+
+    Important:
+    - Do NOT generate code yet
+    - Do NOT create files yet
+    - Wait for my confirmation before implementation
+
+    Expected output for this step:
+    1. Approaches
+    2. Recommendation
+    3. Proposed project structure
+    4. Key setup decisions
+
+ #### Follow-up
+     Use approach 2. Implement it with production-ready code.
+
+    Keep it simple, clean, and maintainable.
 
 ### 2. Design System Prompt
 
-    Create a reusable design system using Tailwind CSS.
+    Act as a senior frontend engineer.
 
-    Requirements:
-    - Define color palette, spacing scale, typography
-    - Create reusable components:
-    Button, Input, Card, Container
-    - Use consistent border radius (4px)
-    - Define variants (primary, secondary, ghost)
-    - Ensure accessibility (focus states, contrast)
+Task:
+Design a reusable design system using Tailwind CSS for a React application.
 
-    Output:
-    - Component implementations
-    - Example usage
+Requirements:
+- Define color palette, spacing scale, and typography
+- Create reusable components:
+  Button, Input, Card, Container
+- Use consistent border radius (4px)
+- Define variants (primary, secondary, ghost)
+- Ensure accessibility (focus states, contrast)
+- Keep the system simple, scalable, and production-friendly
+
+Step 1: Propose 2–3 approaches
+For each approach, include:
+- How the design system is structured
+- Styling strategy (pure Tailwind vs abstraction vs config-driven)
+- Pros and cons
+- When to use each approach
+
+Step 2: Recommendation
+- Recommend the best approach for this project
+- Keep reasoning practical
+
+Important:
+- Do NOT write code yet
+- Focus on structure, patterns, and reusability
+- Wait for my confirmation before implementation
+
+Expected output:
+1. Approaches
+2. Recommendation
+3. Proposed component structure
+4. Key design decisions
 
 
 ### 3. Layout + Routing Prompt
@@ -373,3 +427,7 @@
 
 ##
     Review this React + Tailwind code as a senior frontend engineer. Fix UI/responsive issues, refactor for maintainability, improve accessibility, and optimize performance where it matters. Preserve behavior, avoid over-engineering, explain the key issues, and provide production-ready code.        
+
+##
+    
+    Audit this codebase for file size and loading performance issues. Identify unused CSS, redundant JavaScript imports, uncompressed assets, and synchronous loading patterns that should be async. Prioritize changes that would have the most impact on initial page load time, and implement the top five with explanations of what you changed and why.    
